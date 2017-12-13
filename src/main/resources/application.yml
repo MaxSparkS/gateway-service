@@ -1,0 +1,15 @@
+zuul:
+  routes:
+    actors:
+      path: /actors/**
+      url: http://localhost:9001/api/actors
+    login:
+      path: /login/**
+      url: http://localhost:9002/api/auth
+    admin:
+      path: /admin/**
+      url: http://localhost:9002/api/admin
+    user:
+      path: /user/**
+      url: http://localhost:9002/api/user
+      
