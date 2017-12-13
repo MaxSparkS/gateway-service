@@ -2,14 +2,16 @@ zuul:
   routes:
     actors:
       path: /actors/**
-      url: http://localhost:9001/api/actors
+      url: https://actor-service.herokuapp.com/api/actors
     login:
       path: /login/**
-      url: http://localhost:9002/api/auth
+      url: https://auth-microservice.herokuapp.com/api/auth
     admin:
       path: /admin/**
-      url: http://localhost:9002/api/admin
+      url: https://auth-microservice.herokuapp.com/api/admin
     user:
       path: /user/**
-      url: http://localhost:9002/api/user
-      
+      url: https://auth-microservice.herokuapp.com/api/user
+    films:
+      path: /films/**
+      url: http://filmsapi-dev.eu-central-1.elasticbeanstalk.com/api/Films
