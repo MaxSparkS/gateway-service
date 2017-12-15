@@ -17,4 +17,6 @@ public class GatewayApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
+
+
 }
