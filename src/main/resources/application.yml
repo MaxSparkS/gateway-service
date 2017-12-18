@@ -16,3 +16,6 @@ zuul:
       path: /user/**
       sensitiveHeaders: Cookie,Set-Cookie
       url: https://auth-microservice.herokuapp.com/api/user
+    register:
+      path: /register/**
+      url: https://auth-microservice.herokuapp.com/api/register
