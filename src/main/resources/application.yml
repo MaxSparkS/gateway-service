@@ -12,3 +12,7 @@ zuul:
     favorites:
       path: /favorites/**
       url: http://usersapi-dev.eu-central-1.elasticbeanstalk.com/api/Favorites
+    user:
+      path: /user/**
+      sensitiveHeaders: Cookie,Set-Cookie
+      url: https://auth-microservice.herokuapp.com/api/user
